@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Lucid Dream World</title>
+  <style>
+    /* Reset and Base Styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: 'Georgia', serif;
+      line-height: 1.6;
+      color: #f0f0f0;
+      background: #121212;
+    }
+    
+    a {
+      color: #a0c4ff;
+      text-decoration: none;
+    }
+    
+    /* Hero Section */
+    #hero {
+      position: relative;
+      height: 100vh;
+      background: linear-gradient(135deg, #1a1a40, #532e7c);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+    }
+    
+    #hero .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.4);
+      z-index: 1;
+    }
+    
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      text-align: center;
+      padding: 20px;
+      max-width: 800px;
+    }
+    
+    .hero-content h1 {
+      font-size: 3rem;
+      margin-bottom: 0.5rem;
+    }
+    
+    .hero-content p {
+      font-size: 1.2rem;
+      margin-bottom: 1.5rem;
+    }
+    
+    .logo {
+      width: 120px;
+      margin-bottom: 1rem;
+    }
+    
+    /* Section Styles */
+    main {
+      background: #181818;
+      padding: 50px 20px;
+    }
+    
+    section {
+      margin-bottom: 50px;
+    }
+    
+    section h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid #333;
+    }
+    
+    section p {
+      font-size: 1rem;
+      margin-bottom: 20px;
+    }
+    
+    /* Card Container */
+    .card-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+    
+    .card {
+      background: #252525;
+      padding: 20px;
+      border-radius: 8px;
+      flex: 1 1 calc(45% - 20px);
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s ease;
+    }
+    
+    .card:hover {
+      transform: translateY(-5px);
+    }
+    
+    .card h3 {
+      margin-bottom: 10px;
+      font-size: 1.5rem;
+      color: #d8bfd8;
+    }
+    
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #121212;
+      font-size: 0.9rem;
+    }
+    
+    /* Fade-In Animation */
+    .fade-in {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 1s ease-out, transform 1s ease-out;
+    }
+    
+    .fade-in.appear {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    
+    /* Responsive adjustments */
+    @media (max-width: 768px) {
+      .hero-content h1 {
+        font-size: 2.5rem;
+      }
+      .card-container {
+        flex-direction: column;
+      }
+      .card {
+        flex: 1 1 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Hero Section -->
+  <header>
+    <div id="hero" class="fade-in">
+      <div class="overlay"></div>
+      <div class="hero-content">
+        <!-- Replace "logo.png" with your actual logo file path -->
+        <img src="logo.png" alt="Logo" class="logo" />
+        <h1>Step Into the World of Lucid Dreams</h1>
+        <p>A sanctuary for dreamers, seekers of mental peace, and explorers of the subconscious.</p>
+        <!-- A call-to-action button can be added here in the future -->
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <!-- Visitors Section -->
+    <section id="visitors" class="fade-in">
+      <h2>Welcome, Dreamer</h2>
+      <p>Begin your journey in this ethereal realm. Here, you can reflect on your dreams, explore mindfulness, and discover secrets of a serene fantasy world.</p>
+    </section>
+    
+    <!-- Learning Section -->
+    <section id="learning" class="fade-in">
+      <h2>Learning & Exploration</h2>
+      <div class="card-container">
+        <div class="card">
+          <h3>Lucid Dream Techniques</h3>
+          <p>Unlock methods and practices to master your dreams.</p>
+        </div>
+        <div class="card">
+          <h3>Mindfulness in Dreams</h3>
+          <p>Dive into meditation and awareness techniques that blend the conscious with the subconscious.</p>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Diary & Journal Section -->
+   <section id="diary" class="fade-in">
+  <h2>Diary & Journal</h2>
+  <div class="card-container">
+    <div class="card">
+      <h3><a href="Diary.html" style="color: inherit; text-decoration: none;">Dream Diary #1</a></h3>
+      <p>Reflections and surreal experiences from a night of dream explorations.</p>
+    </div>
+    <div class="card">
+      <h3>Dream Journal #2</h3>
+      <p>In-depth entries detailing experiments and personal insights into the mind’s depths.</p>
+    </div>
+  </div>
+</section>
+    
+    <!-- Research & Experimentation Section -->
+    <section id="research" class="fade-in">
+      <h2>Research & Experiments</h2>
+      <div class="card-container">
+        <div class="card">
+          <h3>Lucid Dream Experiments</h3>
+          <p>Documenting experiments on dream techniques and subconscious pathways.</p>
+        </div>
+        <div class="card">
+          <h3>Subconscious Pathways</h3>
+          <p>Insightful research on the interplay between science, art, and dreams.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Lucid Dream World. All rights reserved.</p>
+  </footer>
+
+  <!-- JavaScript for interactive animations -->
+  <script>
+    // Wait for the DOM to load
+    document.addEventListener('DOMContentLoaded', function() {
+      const faders = document.querySelectorAll('.fade-in');
+  
+      const options = {
+        threshold: 0.1,
+        rootMargin: "0px 0px -50px 0px"
+      };
+  
+      const appearOnScroll = new IntersectionObserver(function(entries, observer) {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('appear');
+            observer.unobserve(entry.target);
+          }
+        });
+      }, options);
+  
+      faders.forEach(fader => {
+        appearOnScroll.observe(fader);
+      });
+    });
+  </script>
+</body>
+</html>
